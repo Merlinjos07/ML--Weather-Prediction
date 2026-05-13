@@ -37,7 +37,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-data = pd.read_csv("weather.csv")
+data = pd.read_csv("weather-station-eee-block_2024_07_13.csv")
 X = data[['hum', 'pressure', 'wind_speed', 'illumination', 'co2']]
 X = X.fillna(X.mean())
 y_pollution = data['pm2_5'].fillna(data['pm2_5'].mean())
